@@ -1,5 +1,5 @@
 *.pyc
 __pycache__
-book
+bok
 db.sqlite3
 /static
