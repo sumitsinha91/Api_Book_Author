@@ -5,11 +5,11 @@ class BookConfig(AppConfig):
     name = 'book'
 
 
-class UserConfig(AppConfig):
-	name = 'user'
+# class UserConfig(AppConfig):
+# 	name = 'user'
 
 
-	def ready(self):
-		import user.singnals
+# 	def ready(self):
+# 		import user.singnals
 
-		#########
+# 		#########
