@@ -2,6 +2,14 @@ from rest_framework import serializers
 
 from .models import Author, Book
 
+
+class UserSerializer(serializers.ModelSerializer):
+	owner = serializers.ReadOnlyField(source='owner.username')
+
+	class meta:
+		model = Author
+		fields = ( 'id', 'title','isbn', 'search_url','owner')
+
 class BookSerializer(serializers.ModelSerializer):
 
 	"""

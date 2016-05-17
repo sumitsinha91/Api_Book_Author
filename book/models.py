@@ -9,7 +9,7 @@ class Author(models.Model):
     """
 
     """
-
+    owner = models.ForeignKey('auth.User', related_name='Author')
     first_name = models.CharField(max_length=100, verbose_name='First Name')
     last_name = models.CharField(max_length=100, verbose_name='Last Name')
 
@@ -31,6 +31,6 @@ class Book(models.Model):
 
     def __unicode__(self):
         return self.title
-
+######
 
 
