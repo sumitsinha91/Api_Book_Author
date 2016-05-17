@@ -56,7 +56,7 @@ class AuthorInstanceView(generics.RetrieveAPIView):
         response = {'Authors': Author.object.all()}
         return render(request, 'index.htm', response)
 
-####################
+
 
 
 
